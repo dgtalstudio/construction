@@ -1,0 +1,58 @@
+$inblva
+  display: inline-block
+  vertical-align: bottom
+
+table
+  background-color: $cor.white
+
+th
+  text-align: left
+
+.table
+  width: 100%
+  max-width: 100%
+  > thead,
+  > tbody,
+  > tfoot
+    > tr
+      > th,
+      > td
+        padding: 15px
+        border-top: 1px solid $cor.texto
+
+  > thead > tr > th
+    border-bottom: 1px solid $cor.texto
+    font-weight: normal
+    color: $cor.roxo
+
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child
+    > tr:first-child
+      > th,
+      > td
+        border-top: 0
+
+  > tbody + tbody
+    border-top: 1px solid $cor.texto
+
+.table--hover
+  > tbody > tr:hover
+    background-color: $cor.fundo
+    cursor: pointer
+
+table col[class*="col-"]
+  position: static
+  float: none
+  display: table-column
+
+table
+  td,
+  th
+    &[class*="col-"]
+      position: static
+      float: none
+      display: table-cell
+
+.table__td--right
+  text-align: right

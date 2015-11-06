@@ -1,0 +1,27 @@
+extends ./extends/layout.jade
+
+block title
+  title Design, Web, MKT Digital - DGTAL Studio
+
+block critical
+  +critical('/*{index.css}*/')
+
+block content
+  main.construcao(role='main')
+    svg.construcao__logotipo
+      use#animaDGtal(xlink:href='#dgtal') DGTAL Studio
+    header
+      h1.construcao__titulo
+        | DESIGN  //  WEB  //  DIGITAL MKT 
+    section.construcao__info
+      svg.construcao__icon.construcao__icon--coffee
+        use(xlink:href='#coffee') café
+      p
+        | Desculpe, mas acabou de sair um café fresquinho...
+        br
+        | voltamos em breve!
+      p
+        span É urgente? mande um 
+        a.construcao__link(href="mailto:contato@dgtalstudio.com")
+          svg.construcao__icon.construcao__icon--mail
+            use(xlink:href='#envelope') email

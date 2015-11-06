@@ -1,0 +1,32 @@
+$btn
+  position relative
+  box-sizing border-box
+  width 100%
+  padding 0.75em
+  margin 0
+  overflow hidden
+  will-change background-color
+  transition 0.5s background-color
+
+btn($cor)
+  background-color: $cor
+  &:hover
+  &:focus
+    background-color: darken($cor, 20%)
+    outline: none
+
+button
+  appearance: none
+  border: none
+  border-radius: 0
+  font-weight: 400
+  font-size: 1.3em
+  color: $cor.white
+  cursor: pointer
+
+.btn
+  @extend $btn
+
+for $k, $v in $cor
+  .btn--{$k}
+    btn($v)

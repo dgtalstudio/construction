@@ -1,0 +1,29 @@
+{
+  "name": "dgtal-studio",
+  "description": "Site da Dgtal Studio",
+  "license": "UNLICENSED",
+  "private": true,
+  "authors": [
+    {
+      "name": "Thiago Lagden",
+      "email": "lagden@dgtalstudio.com",
+      "url": "http://dgtalstudio.com"
+    }
+  ],
+  "moduleType": [
+    "amd",
+    "es6"
+  ],
+  "keywords": [
+    "web",
+    "design",
+    "digital",
+    "marketing"
+  ],
+  "dependencies": {
+    "svg-localstorage": "~0.2.0",
+    "requirejs": "~2.1.20",
+    "webfontloader": "~1.6.10",
+    "vivus": "~0.2.3"
+  }
+}

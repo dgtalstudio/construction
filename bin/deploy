@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+THIS=$(basename $0)
+DIR="$( cd -P "$( dirname "$0" )" && pwd )"
+cd $DIR
+cd ..
+CURR_FOLDER=`pwd`
+
+# Root
+cd $CURR_FOLDER
+LOG=$CURR_FOLDER/rsync.log
+SOURCE=$CURR_FOLDER/build/.
+DEST=75.126.173.136:/home/lagden/webapps/dgs/.
+
+# Sync
+rsync $SOURCE $DEST --rsh ssh --recursive --delete > $LOG
