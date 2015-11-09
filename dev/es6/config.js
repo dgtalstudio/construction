@@ -7,7 +7,9 @@ define('config', () => {
 			app: '../app',
 			component: '../component',
 			data: '../data',
-			templates: '../templates'
+			templates: '../templates',
+			TweenLite: './gsap/src/uncompressed/TweenLite',
+			CSSPlugin: './gsap/src/uncompressed/plugins/CSSPlugin'
 		}
 	});
 });

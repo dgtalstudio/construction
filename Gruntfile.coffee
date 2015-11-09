@@ -89,7 +89,7 @@ module.exports = (grunt) ->
     jade:
       html:
         options:
-          pretty: true
+          pretty: false
           data: fixtures
         files: [
           expand: true
