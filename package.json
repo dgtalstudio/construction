@@ -17,7 +17,8 @@
   },
   "repository": "lagden/dgtalstudio",
   "scripts": {
-    "static": "bin/deploy",
+    "build": "grunt build",
+    "deploy": "npm run build && bin/deploy",
     "start": "grunt serve"
   },
   "devDependencies": {
@@ -65,6 +66,7 @@
     ],
     "rules": {
       "global-require": 0,
+      "camelcase": [2, {"properties": "never"}],
       "quote-props": [
         2,
         "as-needed"
